@@ -1,3 +1,3 @@
-# How-To-Fix-Windows
-So This Repositories Help You For Fix Windows
-I Think This Repositories Will Help You 😀😊
+# MinhZ Hub
+The Most Power Full Script Made by MinhZ
+So I'm The New Developer And I Will Make Power Full Script For You 😊
