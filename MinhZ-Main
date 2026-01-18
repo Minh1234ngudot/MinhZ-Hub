@@ -9,7 +9,6 @@ local SupportedGames = {
     {id = 189707, name = "Natural Disaster Survival"},
     {id = 123974602339071, name = "Just A Baseplate"},
     {id = 88308889239232, name = "Green Baseplate"},
-    {id = 102590772714636, name = "My Baseplate"},
 }
 
 local function ShowLoading()
@@ -168,8 +167,6 @@ local function ShowLoading()
         elseif gameID == 123974602339071 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Minh1234ngudot/MinhZ-Hub/refs/heads/main/MinhZ-Just-A-Baseplate"))()
         elseif gameID == 88308889239232 then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Minh1234ngudot/MinhZ-Hub/refs/heads/main/MinhZ-Just-A-Baseplate"))()
-        elseif gameID == 102590772714636 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Minh1234ngudot/MinhZ-Hub/refs/heads/main/MinhZ-Just-A-Baseplate"))()
         end
     else
