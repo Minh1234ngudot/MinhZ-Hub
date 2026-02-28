@@ -1,4 +1,13 @@
 -- Credit aabbaaii13/14, Modified This Script By MinhZ
+local apiUrl = "https://minhz-hub.vercel.app/total-exec"
+
+pcall(function()
+    request({
+        Url = apiUrl,
+        Method = "GET"
+    })
+end)
+
 print("Credit aabbaaii13/14, Modified This Script By MinhZ")
 if not game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("TopbarStandard") then
     loadstring(game:HttpGet(("aul.rabpoT/niam/sdaeh/sfer/-/todugn4321hniM/moc.tnetnocresubuhtig.war//:sptth"):reverse()))()
