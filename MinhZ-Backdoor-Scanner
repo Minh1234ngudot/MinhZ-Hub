@@ -1,0 +1,394 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 17 | Scripts: 6 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.MinhZ Backdoor Scanner
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"]["Name"] = [[MinhZ Backdoor Scanner]];
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.MinhZ Backdoor Scanner.Minimize Bind
+G2L["2"] = Instance.new("LocalScript", G2L["1"]);
+G2L["2"]["Name"] = [[Minimize Bind]];
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame
+G2L["3"] = Instance.new("Frame", G2L["1"]);
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
+G2L["3"]["Size"] = UDim2.new(0, 481, 0, 291);
+G2L["3"]["Position"] = UDim2.new(0.28643, -180, 0.52936, -120);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["3"]["Name"] = [[MainFrame]];
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.Drag
+G2L["4"] = Instance.new("LocalScript", G2L["3"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["4"]["Sandboxed"] = true;
+G2L["4"]["Name"] = [[Drag]];
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS
+G2L["5"] = Instance.new("Frame", G2L["3"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
+G2L["5"]["Size"] = UDim2.new(0, 480, 0, 271);
+G2L["5"]["Position"] = UDim2.new(0.00081, 0, 0.06818, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["5"]["Name"] = [[ExecutorSS]];
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.Frame1
+G2L["6"] = Instance.new("Frame", G2L["5"]);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["6"]["ClipsDescendants"] = true;
+G2L["6"]["Size"] = UDim2.new(0, 465, 0, 204);
+G2L["6"]["Position"] = UDim2.new(0, 8, 0, 8);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["6"]["Name"] = [[Frame1]];
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.Frame1.TextBox
+G2L["7"] = Instance.new("TextBox", G2L["6"]);
+G2L["7"]["CursorPosition"] = -1;
+G2L["7"]["PlaceholderColor3"] = Color3.fromRGB(181, 181, 181);
+G2L["7"]["AutoLocalize"] = false;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["7"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["ClearTextOnFocus"] = false;
+G2L["7"]["PlaceholderText"] = [=[--[[ Input Your Script Here ]]--]=];
+G2L["7"]["Size"] = UDim2.new(0, 465, 0, 204);
+G2L["7"]["Position"] = UDim2.new(0, 0, -0.00243, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["7"]["Text"] = [[]];
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.Clear
+G2L["8"] = Instance.new("TextButton", G2L["5"]);
+G2L["8"]["TextSize"] = 12;
+G2L["8"]["AutoButtonColor"] = false;
+G2L["8"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 121, 0, 39);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["8"]["Text"] = [[Clear Script]];
+G2L["8"]["Name"] = [[Clear]];
+G2L["8"]["Position"] = UDim2.new(0, 143, 0, 223);
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.Clear.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["9"]["Sandboxed"] = true;
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.Execute
+G2L["a"] = Instance.new("TextButton", G2L["5"]);
+G2L["a"]["TextSize"] = 12;
+G2L["a"]["AutoButtonColor"] = false;
+G2L["a"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0, 121, 0, 39);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["a"]["Text"] = [[Execute]];
+G2L["a"]["Name"] = [[Execute]];
+G2L["a"]["Position"] = UDim2.new(0, 8, 0, 223);
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.Execute.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.R6
+G2L["c"] = Instance.new("TextButton", G2L["5"]);
+G2L["c"]["TextSize"] = 12;
+G2L["c"]["AutoButtonColor"] = false;
+G2L["c"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["Size"] = UDim2.new(0, 121, 0, 39);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["c"]["Text"] = [[R6]];
+G2L["c"]["Name"] = [[R6]];
+G2L["c"]["Position"] = UDim2.new(0, 277, 0, 223);
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.R6.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["c"]);
+
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.Inject
+G2L["e"] = Instance.new("TextButton", G2L["5"]);
+G2L["e"]["TextSize"] = 12;
+G2L["e"]["AutoButtonColor"] = false;
+G2L["e"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 63, 0, 39);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["e"]["Text"] = [[Inject]];
+G2L["e"]["Name"] = [[Inject]];
+G2L["e"]["Position"] = UDim2.new(0, 410, 0, 223);
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.Inject.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["e"]);
+
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.TopBar
+G2L["10"] = Instance.new("Frame", G2L["3"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
+G2L["10"]["Size"] = UDim2.new(1, 0, -0.00254, 22);
+G2L["10"]["Position"] = UDim2.new(0.00208, 0, -0.00144, 0);
+G2L["10"]["Name"] = [[TopBar]];
+
+
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.TopBar.TextLabel
+G2L["11"] = Instance.new("TextLabel", G2L["10"]);
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["TextColor3"] = Color3.fromRGB(181, 181, 181);
+G2L["11"]["BackgroundTransparency"] = 1;
+G2L["11"]["Size"] = UDim2.new(1.02536, -10, 1, 0);
+G2L["11"]["Text"] = [[MinhZ Backdoor Scanner  |  RCtrl Toggle]];
+G2L["11"]["Position"] = UDim2.new(-0.00376, 0, -0, 0);
+
+
+-- StarterGui.MinhZ Backdoor Scanner.Minimize Bind
+local function C_2()
+local script = G2L["2"];
+	local UserInputService = game:GetService("UserInputService")
+	local gui = script.Parent
+	local mainFrame = gui:WaitForChild("MainFrame")
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+	
+		if input.KeyCode == Enum.KeyCode.RightControl then
+			mainFrame.Visible = not mainFrame.Visible
+		end
+	end)
+end;
+task.spawn(C_2);
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.Drag
+local function C_4()
+local script = G2L["4"];
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_4);
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.Clear.LocalScript
+local function C_9()
+local script = G2L["9"];
+	local box = script.Parent.Parent.Frame1.TextBox
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		box.Text = "--[[ Script Cleared! ]]--"
+		wait(.6)
+		box.Text = ""
+	end)
+end;
+task.spawn(C_9);
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.Execute.LocalScript
+local function C_b()
+local script = G2L["b"];
+	local btn = script.Parent
+	local StarterGui = game:GetService("StarterGui")
+	
+	local function notify(title, text)
+		pcall(function()
+			StarterGui:SetCore("SendNotification", {
+				Title = title,
+				Text = text,
+				Duration = 3
+			})
+		end)
+	end
+	
+	btn.MouseButton1Click:Connect(function()
+		local codeToRun = script.Parent.Parent.Frame1.TextBox.Text
+	
+		if codeToRun and codeToRun ~= "" then
+			if _G.MinhZ_Backdoor then
+				pcall(function()
+					if _G.MinhZ_Backdoor:IsA('RemoteEvent') then
+						_G.MinhZ_Backdoor:FireServer(codeToRun)
+					elseif _G.MinhZ_Backdoor:IsA('RemoteFunction') then
+						task.spawn(function() _G.MinhZ_Backdoor:InvokeServer(codeToRun) end)
+					end
+				end)
+				notify("MinhZ Hub", "Script Executed!")
+			else
+				notify("MinhZ Hub", "Error: Please Inject first!")
+			end
+		else
+			notify("MinhZ Hub", "Error: TextBox is empty!")
+		end
+	end)
+end;
+task.spawn(C_b);
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.R6.LocalScript
+local function C_d()
+local script = G2L["d"];
+	local btn = script.Parent
+	local Players = game:GetService("Players")
+	local StarterGui = game:GetService("StarterGui")
+	local localPlayer = Players.LocalPlayer
+	
+	local function notify(title, text)
+		pcall(function()
+			StarterGui:SetCore("SendNotification", {
+				Title = title,
+				Text = text,
+				Duration = 3
+			})
+		end)
+	end
+	
+	btn.MouseButton1Click:Connect(function()
+		if _G.MinhZ_Backdoor then
+			local r6Code = "require(3436957371):r6('" .. localPlayer.Name .. "')"
+	
+			pcall(function()
+				if _G.MinhZ_Backdoor:IsA('RemoteEvent') then
+					_G.MinhZ_Backdoor:FireServer(r6Code)
+				elseif _G.MinhZ_Backdoor:IsA('RemoteFunction') then
+					task.spawn(function() _G.MinhZ_Backdoor:InvokeServer(r6Code) end)
+				end
+			end)
+			notify("MinhZ Hub", "R6 Converter Executed!")
+		else
+			notify("MinhZ Hub", "Error: Please Inject first!")
+		end
+	end)
+end;
+task.spawn(C_d);
+-- StarterGui.MinhZ Backdoor Scanner.MainFrame.ExecutorSS.Inject.LocalScript
+local function C_f()
+local script = G2L["f"];
+	local btn = script.Parent
+	local StarterGui = game:GetService("StarterGui")
+	
+	local function notify(title, text)
+		pcall(function()
+			StarterGui:SetCore("SendNotification", {
+				Title = title,
+				Text = text,
+				Duration = 5
+			})
+		end)
+	end
+	
+	local function generateName(length)
+		local alphabet = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'}
+		local text = ''
+		for i = 1, length do
+			text = text .. alphabet[math.random(1, #alphabet)]
+		end
+		return text
+	end
+	
+	btn.MouseButton1Click:Connect(function()
+		notify("MinhZ Hub", "Scanning for Backdoor...")
+	
+		local foundBackdoor = nil
+		local testRemotes = {}
+	
+		for _, remote in pairs(game:GetDescendants()) do
+			if remote:IsA('RemoteEvent') or remote:IsA('RemoteFunction') then
+				if string.split(remote:GetFullName(), '.')[1] == 'RobloxReplicatedStorage' then continue end
+	
+				local code = generateName(15)
+				testRemotes[code] = remote
+	
+				local testPayload = "a=Instance.new('Model',workspace)a.Name='"..code.."'"
+	
+				pcall(function()
+					if remote:IsA('RemoteEvent') then
+						remote:FireServer(testPayload)
+					elseif remote:IsA('RemoteFunction') then
+						task.spawn(function() remote:InvokeServer(testPayload) end)
+					end
+				end)
+			end
+		end
+	
+		for i = 1, 50 do 
+			for code, remote in pairs(testRemotes) do
+				if workspace:FindFirstChild(code) then
+					foundBackdoor = remote
+	
+					pcall(function()
+						if remote:IsA('RemoteEvent') then
+							remote:FireServer("workspace['"..code.."']:Destroy()")
+						end
+					end)
+					break
+				end
+			end
+			if foundBackdoor then break end
+			task.wait(0.1)
+		end
+	
+		if foundBackdoor then
+			_G.MinhZ_Backdoor = foundBackdoor
+			notify("MinhZ Hub", "Backdoor found successfully!")
+		else
+			notify("MinhZ Hub", "No backdoor found in this game.")
+		end
+	end)
+end;
+task.spawn(C_f);
+
+return G2L["1"], require;
